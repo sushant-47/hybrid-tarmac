@@ -1,34 +1,54 @@
-# Main
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+### Setup
+- Nx Workspace created using npx create-nx-workspace@latest main.
+- Added `.nvmrc`
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+To use the `.nvmrc`:
+- cd into this directory
+- Run `nvm use`
+- nvm should now use the node version mentioned in `.nvmrc`.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+Created using:
+
+| node | v24.11.0 |
+| ---- | ---- |
+
+### Creating a nx angular application
+- Use Nx Console extension to generate a nx application.
+- Alternatively the below command can be run with pre-configured options to achieve the same using `@nx/angular` plugin:
+`nx g @nx/angular:application --directory=apps/proj1 --name=proj1 --prefix=p1`
+- Run tests using jest
+
+### Unit Tests
+- Use `testMatch`, `findRelatedTests` options for `test` target in `project.json` to test specific test files using regex, a comma-separated list respectively.
+- See https://jestjs.io/docs/configuration#testmatch-arraystring
+- Refer `project.json` for `sample` project
+
+> [!TIP]
+> [Debug Tests using VSCode Debug Session](https://stackoverflow.com/questions/33247602/how-do-you-debug-jest-tests)
+> Clear the cache before running tests (`nx reset`)
+> Test command can also be run in watch node when debugging - `nx test <project> --watch`
+
 
 ## Run tasks
 
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve main
+nx serve main
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build main
+nx build main
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project main
+nx show project main
 ```
-
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
 ## Add new projects
 
@@ -79,13 +99,7 @@ npx nx g ci-workflow
 
 [Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
+#### Useful links
 
 Learn more:
 

@@ -1,0 +1,23 @@
+<div class="buttons">
+    @if (enableGoUp) {
+    <button (click)="goUp()" [attr.disabled]="personSelected ? null : true"> Go Up </button>
+    }
+    @if (enableGoDown) {
+    <button (click)="goDown()" [attr.disabled]="personSelected ? null : true"> Go Down </button>
+    }
+    <div class="floor"> {{ floorID === 0 ? 'Ground' : '' }} Floor {{ floorID === 0 ? '' : floorID }} </div>
+</div>
+
+<div class="persons">
+    @for (person of people; track person) {
+    <span class="person" [class.selected]="isPersonSelected(person)" (click)="togglePerson(person)">
+        {{ person }}
+    </span>
+    }
+</div>
+
+@if (people.length > 0) {
+<button class="select-all" (click)="toggleAll()">
+    {{ selectedPeople.length === people.length ? 'Deselect All' : 'Select All' }}
+</button>
+}

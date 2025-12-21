@@ -1,0 +1,33 @@
+:host {
+    display: block;
+
+    .buttons {
+        padding-bottom: 40px;
+        display: flex;
+
+        .floor {
+            margin: 16px 300px 0px auto;
+            font-size: 18px;
+        }
+    }
+    .persons {
+        display: flex;
+        gap: 40px;
+    }
+    .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 76px;
+        height: 76px;
+        border: 2px solid var(--color-secondary-dark);
+        border-radius: 4px;
+        background-color: var(--color-secondary);
+        transition: box-shadow 0.1s;
+        cursor: pointer;
+
+        &.selected {
+            box-shadow: 3px 3px 8px 2px var(--color-secondary-dark);
+        }
+    }
+}
