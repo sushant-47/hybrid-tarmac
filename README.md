@@ -10,14 +10,43 @@ To use the `.nvmrc`:
 
 Created using:
 
-| node | v24.11.0 |
-| ---- | ---- |
+| | | |
+| ---- | ---- | --- |
+| Node | v24.11.0 | |
+| Nx | v22.1.1 | |
+| Angular | v20.3.13 | @angular/core @angular/common @angular/forms @angular/router @angular/platform-browser @angular/platform-browser-dynamic |
+| Angular Compiler | v20.3.13 | @angular/compiler @angular/compiler-cli |
+| Angular CLI | v20.3.11 | @angular/cli @angular/build |
+| RxJS | v7.8.2 | |
+| TypeScript | v5.9.3 | |
+| Jest | v29.7.0 | |
+| Tslib | v2.8.1 | |
+| | |
 
 ### Creating a nx angular application
 - Use Nx Console extension to generate a nx application.
 - Alternatively the below command can be run with pre-configured options to achieve the same using `@nx/angular` plugin:
 `nx g @nx/angular:application --directory=apps/proj1 --name=proj1 --prefix=p1`
 - Run tests using jest
+
+> Create a angular application in `gfe`
+>
+> `npm x -- nx g @nx/angular:application --directory=apps/gfe/billing-history --name=billing-history --linter=none --prefix=bh --dry-run`
+
+| Nx Console Options | Identifier | IsModified |
+| --- | --- | --- |
+| bundler | esbuild | false |
+| directory | apps/gfe/billing-history | true |
+| name | billing-history | true |
+| routing | true | false |
+| standalone | true | false |
+| linter | none | true |
+| prefix | bh | true |
+| strict | true | false |
+| skipTests | false | false |
+| e2eTestRunner | none | false |
+| unitTestRunner | jest | false |
+| viewEncapsulation | -- | false |
 
 ### Unit Tests
 - Use `testMatch`, `findRelatedTests` options for `test` target in `project.json` to test specific test files using regex, a comma-separated list respectively.
