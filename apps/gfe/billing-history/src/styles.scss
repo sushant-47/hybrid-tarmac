@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@use './app/styles/theme-constants.scss' as cs;
+@use './app/styles/reset.scss';
+@use './app/styles/text.scss';
+@use './app/styles/font.scss' with (
+    $font-base: cs.$fs-base
+);

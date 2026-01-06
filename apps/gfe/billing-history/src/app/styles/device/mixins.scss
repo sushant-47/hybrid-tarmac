@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use './variables.scss' as v;
+
+@mixin tablet {
+    @media screen and (min-width: map.get(v.$tablet, min)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map.get(v.$desktop, min)) {
+        @content;
+    }
+}

@@ -1,0 +1,29 @@
+@use './colors/variables.scss' as cv;
+
+html {
+    font-family: 'Noto Sans', 'Roboto', Courier, monospace;
+}
+
+html {
+    --c-primary: #{cv.$text-primary};
+    --c-primary-hover: #{cv.$text-hover-primary};
+    --c-secondary: #{cv.$text-secondary};
+    --c-tertiary: #{cv.$text-tertiary};
+    --c-error: #{cv.$text-error};
+    --c-success: #{cv.$text-success};
+    --c-warning: #{cv.$text-warning};
+    --c-disabled: #{cv.$text-disabled};
+    // --color-primary-ll: hsl(271, 76%, 70%);
+    // --color-primary-light: hsl(271, 76%, 85%);
+    // --color-secondary: hsl(33 90% 75%);
+    // --color-secondary-dark: hsl(33 90% 25%);
+    // --color-white: hsl(0, 0%, 100%);
+    // --color-black: #000;
+    // --color-error: hsl(0, 80%, 35%);
+    // --color-error-light: hsl(0, 80%, 80%);
+    // --color-border-table: hsl(0, 0%, 75%);
+}
+
+* {
+    box-sizing: border-box;
+}

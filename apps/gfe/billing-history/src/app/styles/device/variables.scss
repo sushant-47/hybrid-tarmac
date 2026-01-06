@@ -1,0 +1,28 @@
+/** Mobile-first with default $device */
+@use '../theme-constants.scss' as cs;
+
+$device: (
+    maxContainer: 100%,
+    spacing: (
+        padding: cs.$spacing-base * 4,
+        gap: cs.$spacing-base * 4,
+    ),
+);
+
+$tablet: (
+    min: 768px,
+    maxContainer: 100%,
+    spacing: (
+        padding: cs.$spacing-base * 8,
+        gap: cs.$spacing-base * 8,
+    ),
+);
+
+$desktop: (
+    min: 1280px,
+    maxContainer: 1280px,
+    spacing: (
+        padding: cs.$spacing-base * 8,
+        gap: cs.$spacing-base * 8,
+    ),
+);

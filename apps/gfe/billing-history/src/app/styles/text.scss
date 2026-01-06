@@ -1,0 +1,21 @@
+/**
+    text styles
+    - can be used across application
+    - categorized based on state (error, success, disabled) and layout position (title, description).
+*/
+
+.text-title {
+    color: var(--c-primary);
+}
+
+.text-description {
+    color: var(--c-secondary);
+}
+
+.text-error {
+    color: var(--c-error);
+}
+
+.text-disabled {
+    color: var(--c-disabled);
+}

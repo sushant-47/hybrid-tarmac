@@ -8,6 +8,8 @@ To use the `.nvmrc`:
 - Run `nvm use`
 - nvm should now use the node version mentioned in `.nvmrc`.
 
+Serve a project using: `npm start <project_name>`
+
 Created using:
 
 | | | |
@@ -58,6 +60,10 @@ Created using:
 > Clear the cache before running tests (`nx reset`)
 > Test command can also be run in watch node when debugging - `nx test <project> --watch`
 
+### Tools / Extensions
+- Nx Console
+- Prettier (Default formatter for all files)
+- Angular Language Service
 
 ## Run tasks
 

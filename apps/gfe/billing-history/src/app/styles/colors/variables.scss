@@ -1,0 +1,36 @@
+@use './color.scss' as c;
+
+/** text */
+$text-primary: c.getColor((primary, fg), 1);
+$text-hover-primary: c.getColor((primary, fg), 2);
+
+$text-secondary: c.getColor((secondary, fg), 1);
+
+$text-tertiary: c.getColor((tertiary, fg), 1);
+
+$text-disabled: c.getColor((neutral, fg), 1);
+
+$text-error: c.getColor((error, basic), 1);
+$text-emphasize-error: c.getColor((error, emphasize), 2);
+$text-success: c.getColor((success, fg), 1);
+$text-warning: c.getColor((warning, fg), 1);
+
+/** line - borders / rings */
+$line-primary: c.getColor((primary, fg), 6);
+
+$line-secondary: c.getColor((secondary, fg), 2);
+
+$line-success: c.getColor((success, fg), 2);
+$line-error: c.getColor((error, basic), 2);
+$line-warning: c.getColor((warning, fg), 3);
+
+/** icons */
+$icon-primary: c.getColor((primary, fg), 5);
+$icon-hover-primary: c.getColor((primary, fg), 4);
+$icon-emphasize: c.getColor((primary, fg), 3);
+
+$icon-success: c.getColor((success, fg), 1);
+$icon-error: c.getColor((error, basic), 1);
+$icon-warning: c.getColor((warning, fg), 2);
+
+@debug $icon-error;

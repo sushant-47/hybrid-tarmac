@@ -1,0 +1,72 @@
+$font-base: 4px !default;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-VariableFont.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-VariableFont-Italic.ttf');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+.fs {
+    &-xs {
+        font-size: $font-base * 3;
+        line-height: $font-base * 4;
+    }
+    &-sm {
+        font-size: $font-base * 3.5;
+        line-height: $font-base * 5;
+    }
+    &-base {
+        font-size: $font-base * 4;
+        line-height: $font-base * 6;
+    }
+    &-lg {
+        font-size: $font-base * 4.5;
+        line-height: $font-base * 7;
+    }
+    &-xl {
+        font-size: $font-base * 5;
+        line-height: $font-base * 7;
+    }
+    &-2xl {
+        font-size: $font-base * 6;
+        line-height: $font-base * 8;
+    }
+    &-3xl {
+        font-size: $font-base * 7.5;
+        line-height: $font-base * 9;
+    }
+    &-4xl {
+        font-size: $font-base * 9;
+        line-height: $font-base * 10;
+    }
+    &-5xl {
+        font-size: $font-base * 12;
+        line-height: $font-base * 12;
+    }
+    &-6xl {
+        font-size: $font-base * 15;
+        line-height: $font-base * 15;
+    }
+}
+
+.fw {
+    &--normal {
+        font-weight: 400;
+    }
+    &--medium {
+        font-weight: 500;
+    }
+    &--semibold {
+        font-weight: 600;
+    }
+}

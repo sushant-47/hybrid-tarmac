@@ -1,0 +1,12 @@
+@use "device/mixins" as d;
+
+.abc {
+    color: var(--c-primary);
+}
+
+@include d.tablet {
+    // tablet styles
+}
+@include d.desktop {
+    // desktop styles
+}
