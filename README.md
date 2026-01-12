@@ -8,7 +8,7 @@ To use the `.nvmrc`:
 - Run `nvm use`
 - nvm should now use the node version mentioned in `.nvmrc`.
 
-Serve a project using: `npm start <project_name>`
+Serve a project using: `npm start:<project_name>`
 
 Created using:
 

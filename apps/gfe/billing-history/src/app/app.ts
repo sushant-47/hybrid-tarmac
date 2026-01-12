@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-    imports: [RouterModule],
+    imports: [RouterOutlet],
     selector: 'bh-root',
     templateUrl: './app.html',
     styleUrl: './app.scss',
